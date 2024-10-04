@@ -33,7 +33,8 @@ module.exports = {
     camelcase: 'off', // 允许使用使用带有大写字母的命名
     '@typescript-eslint/naming-convention': [
       'off' // 关闭命名约定检查
-    ]
+    ],
+    'vue/multi-word-component-names': 0
   },
   ignorePatterns: ['src/**/*.d.ts', 'node_modules/', 'vite.config.ts']
 }
