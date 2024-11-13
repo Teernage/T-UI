@@ -8,5 +8,5 @@ module.exports = {
         beforeEach: [require('postcss-for'), require('postcss-color-mix')]
       }
     })
-  ]
+  ] 
 }
