@@ -15,14 +15,18 @@
     :autofocus="autofocus"
     :type="nativeType"
   >
-    <span> <slot /> </span>
+    <Icon icon="spinner" spin v-if="loading" />
+    <Icon :icon="icon" v-if="icon" />
+    <span>
+      <slot />
+    </span>
   </button>
 </template>
-
 <script setup lang="ts">
 import { ref } from 'vue'
 import type { ButtonProps } from './types'
-
+import Icon from '../Icon/Icon.vue'
+// import { buttonProps } from './types'
 defineOptions({
   name: 'VkButton'
 })
