@@ -5,6 +5,7 @@ import Collapse from './components/Collapse/Collapse.vue'
 import CollapseItem from './components/Collapse/CollapseItem.vue'
 import Item from './components/Collapse/CollapseItem.vue'
 import Icon from './components/Icon/Icon.vue'
+import TestVue from './components/DragList/TestVue.vue'
 
 const opendValue = ref(['a'])
 </script>
@@ -29,6 +30,8 @@ const opendValue = ref(['a'])
       </Item>
     </Collapse>
     {{ opendValue }}
+
+    <TestVue />
   </div>
 </template>
 
